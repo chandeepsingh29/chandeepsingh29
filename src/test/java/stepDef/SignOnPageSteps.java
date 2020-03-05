@@ -35,7 +35,7 @@ public class SignOnPageSteps extends TestBase
 	{
 		System.out.println("when step2");
 		
-		signOnPage = loginPage.invalidLogin("username","password");
+		signOnPage = loginPage.invalidLogin(property.getProperty("username"),property.getProperty("password"));
 	}
 
 	@Then("^User should not be able to login$")
